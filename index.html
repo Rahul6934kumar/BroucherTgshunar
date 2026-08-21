@@ -141,7 +141,6 @@
     <a href="https://trinityglobalschool.com/" class="corner-btn"
       >Back to TGS</a
     >
-    <!-- <a href="index2.html" class="corner-btn">View Book 2</a> -->
 
     <div id="book-container">
       <div id="book">
@@ -173,9 +172,7 @@
         <div class="page"><img src="brochure_images/img1/7.png" alt="7" /></div>
         <div class="page"><img src="brochure_images/img1/8.png" alt="8" /></div>
         <div class="page"><img src="brochure_images/img1/9.png" alt="9" /></div>
-        <div class="page">
-          <img src="brochure_images/img1/10.png" alt="10" />
-        </div>
+        <div class="page"><img src="brochure_images/img1/10.png" alt="10" /></div>
       </div>
     </div>
 
@@ -202,14 +199,14 @@
           startPage: 0,
         });
 
-        //pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+        pageFlip.loadFromHTML(document.querySelectorAll(".page"));
 
-       /* pageFlip.on("flip", (e) => {
-          flipSound.currentTime = 0;
-          flipSound
-            .play()
-            .catch(() => console.log("Sound muted - need user interaction"));
-        });*/
+        pageFlip.on("flip", (e) => {
+          // flipSound.currentTime = 0;
+          // flipSound
+          //   .play()
+          //   .catch(() => console.log("Sound muted - need user interaction"));
+        });
       });
     </script>
   </body>
